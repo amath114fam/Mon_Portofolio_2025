@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background: black;
+}
+header{
+    position: sticky;
+    top: 0;
+    padding: 20px 50px;
+    background: black;
+    opacity: 0.9;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav .amath-name{
+    font-size: 20px;
+    font-weight: bold;
+    background: none;
+}
+header nav .fa-bars{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+header nav ul{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header nav a{
+    padding: 10px;
+    color: white;
+}
+header nav ul li a:hover{
+    background: blueviolet;
+    border-radius: 10px;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+/**************************************************a_propos**************************************************/
+.a_propos{
+    padding: 20px 50px;
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: 7fr 3fr;
+    background: black;
+}
+.a_propos .textPropos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.a_propos h1{
+    color: white;
+}
+.a_propos p{
+    color: white;
+    text-align: left;
+}
+.a_propos .textPropos a{
+    margin-top: 10px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 30px;
+    border: 1px solid blueviolet;
+    transition: 0.5s ease-in-out;
+}
+.a_propos .textPropos a:hover{
+    background: blueviolet;
+    color: white;
+    font-weight: bold;
+    transform: scale(1) rotate(3deg);
+}
+.a_propos img{
+    height: 400px;
+    width: 400px;
+}
+/**************************************************compétence************************************************/
+.competence{
+    padding: 20px 50px;
+}
+.competence .content-competence{
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    grid-gap: 20px;
+}
+.competence h2{
+    color: white;
+    margin-bottom: 1%;
+}
+.competence .expertise{
+    display: grid;
+    grid-gap: 10px;
+}
+.competence .content-language{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 8fr;
+    grid-gap: 20px;
+    background: white;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+.competence .content-language .progression{
+    height: 15px;
+    background: blueviolet;
+    border-radius: 30px;
+}
+.competence .content-language #html{
+    background: linear-gradient(to right, blueviolet 90%, black 10%);
+}
+.competence .content-language #css{
+    background: linear-gradient(to right, blueviolet 85%, black 15%);
+}
+.competence .content-language #js{
+    background: linear-gradient(to right, blueviolet 80%, black 20%);
+}
+.competence .content-language #php{
+    background: linear-gradient(to right, blueviolet 75%, black 25%);
+}
+.competence .content-language #laravel{
+    background: linear-gradient(to right, blueviolet 85%, black 15%);
+}
+.competence .content-language #angular{
+    background: linear-gradient(to right, blueviolet 70%, black 30%);
+}
+.competence img{
+    width: 100%;
+    height: 400px;
+}
+.competence .content-language p{
+    font-weight: bold;
+}
+/******************************************************projet************************************************/
+.projet{
+    padding: 20px 50px;
+}
+.projet h2{
+    color: white;
+    margin-bottom: 2%;
+}
+.projet .projet-content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+}
+.projet .card{
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.projet .card h5{
+    color: black;
+}
+.projet .card img{
+    width: 100%;
+    border-radius: 10px;
+}
+.card-desc a{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: center;
+    padding: 5px;
+    background: blueviolet;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+/****************************************************contact*********************************************/
+.contact{
+    padding: 20px 50px;
+    background: black;
+}
+.contact form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    grid-template-areas: 
+    "nom email"
+    "texter texter"
+    "buton reseau"
+}
+.contact form .contact-nom{
+    display: flex;
+    flex-direction: column;
+    grid-area: nom;
+}
+.contact form .contact-nom input,
+.contact form .contact-email input{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid blueviolet;
+    outline: none;
+}
+.contact form .contact-email{
+    display: flex;
+    flex-direction: column;
+    grid-area: email;
+}
+.contact form .contact-texter{
+    display: flex;
+    flex-direction: column;
+    grid-area: texter;
+}
+.contact form .contact-texter textarea{
+    padding: 50px;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid blueviolet;
+}
+.contact form .contact-buton{
+    grid-area: buton;
+}
+.contact form .contact-buton button{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: blueviolet;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid blueviolet;
+}
+.contact form .contact-sociauxreseaux{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    gap: 20px;
+    grid-area: reseau;
+}
+.contact .contact-sociauxreseaux a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: blueviolet;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+}
+.contact h2,
+.contact label,
+.contact p{
+    color: white;
+}
+.contact h2,
+.contact p{
+    margin-bottom: 1%;
+}
+.contact label{
+    font-weight: bold;
+}
+/***************************************************footer************************************************/
+footer{
+    padding: 2%;
+    background: white;
+}
+footer p{
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 1px 1px blueviolet;
+}
+/******************************************medias queries**************************************************/
+@media(max-width : 576px){
+    header{
+    padding: 3%;
+   }
+    header nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    header nav ul{
+        display: none;
+    }
+    header nav .amath-name{
+        font-size: 15px;
+        font-weight: bold;
+        background: none;
+    }
+    header nav .fa-bars{
+        display: block;
+    }
+    .a_propos{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 2% 6%;
+    }
+    .a_propos h1{
+        font-size: 20px;
+    }
+    .a_propos p{
+        text-align: justify;
+    }
+    .a_propos img{
+        height: 200px;
+        width: 200px;
+    }
+    .a_propos .textPropos a{
+        margin-top: 5px;
+        width: 100%;
+    }
+    .competence{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 2% 6%;
+
+    }
+    .competence .content-competence{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .competence .content-competence img{
+        height: 300px;
+        width: 100%;
+    }
+    .competence .content-language{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 5fr 5fr;
+    }
+    .projet{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 2% 6%;
+    }
+    .projet .projet-content{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contact{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 2% 6%;
+    }
+    .contact form{
+        display: flex;
+        align-items: left;
+        flex-direction: column;
+    }
+    .contact form .contact-nom input,
+    .contact form .contact-email input{
+        width: 100%;
+        padding: 10px;
+    }
+    .contact form .contact-texter textarea{
+        padding: 20px 10px;
+        width: 100%;
+    }
+
+}
+@media (min-width: 577px) and (max-width: 768px) {
+     header{
+    padding: 3%;
+   }
+    header nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    header nav ul{
+        display: none;
+    }
+    header nav .amath-name{
+        font-size: 20px;
+        font-weight: bold;
+        background: none;
+    }
+    header nav .fa-bars{
+        display: block;
+    }
+    .a_propos{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 2% 6%;
+    }
+    .a_propos .textPropos a{
+        margin-top: 5px;
+        width: 100%;
+    }
+    .competence{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 2% 6%;
+
+    }
+     .competence .content-language{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 5fr 5fr;
+    }
+    .projet{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 2% 6%;
+    }
+    .projet .projet-content{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+     .contact{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 2% 6%;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+     header{
+    padding: 3%;
+   }
+    header nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    header nav ul{
+        display: none;
+    }
+    header nav .amath-name{
+        font-size: 20px;
+        font-weight: bold;
+        background: none;
+    }
+    header nav .fa-bars{
+        display: block;
+        font-size: 30px;
+    }
+    .a_propos{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 2% 6%;
+    }
+    .a_propos .textPropos a{
+        margin-top: 5px;
+        width: 100%;
+    }
+    .competence{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 2% 6%;
+
+    }
+     .competence .content-language{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 5fr 5fr;
+    }
+    .projet{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 2% 6%;
+    }
+    .projet .projet-content{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+     .contact{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 2% 6%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1030px){
+    header nav ul{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   }
+   .a_propos .textPropos a{
+        margin-top: 5px;
+        width: 100%;
+    }
+}

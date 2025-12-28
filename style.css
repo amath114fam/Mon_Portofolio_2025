@@ -364,7 +364,6 @@ footer p{
     }
     .contact form{
         display: flex;
-        align-items: left;
         flex-direction: column;
     }
     .contact form .contact-nom input,
